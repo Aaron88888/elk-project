@@ -52,9 +52,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name      | Publicly Accessible | Allowed IP Addresses |
 |-----------|---------------------|----------------------|
-| Jump Box  | Yes                 | 121.200.6.47         |
+| Jump Box  | Yes                 | 23.101.220.223       |
 | ELK       | Yes                 | 121.200.6.47         |
-|Web-1(DVWA)| Yes                 | 121.200.6.47         |
+|Web-1(DVWA)| Yes                 | 13.72.253.38         |
 
 ### Elk Configuration
 
