@@ -63,9 +63,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 -What is the main advantage of automating configuration with Ansible? Allows IT administrators to automate away the drudgery from their daily tasks, which frees them to focus on efforts that help deliver more value to the business by spending time on more important tasks.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+-Install docker:The Docker engine, used for running containers.
+-Install python3-pip: Package used to install Python software.
+-Install docker module: Python client for Docker. Required by Ansbile to control the state of Docker containers.
+-Download and launch docker elk container: Downloads the Docker container called sebp/elk:761 . sebp is the organization that made the container. elk is the container and 761 is  the version.
+-Configures the container to start with the following port mappings: 5601:5601, 9200:9200.5044:5044.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
