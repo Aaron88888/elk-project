@@ -82,7 +82,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 -Download and launch docker elk container: Downloads the Docker container called sebp/elk:761 . sebp is the organization that made the container. elk is the container and 761 is  the version.
 
--Configures the container to start with the following port mappings: 5601:5601, 9200:9200.5044:5044.
+-Configures the container to start with the following port mappings: 5601:5601, 9200:9200, 5044:5044.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
