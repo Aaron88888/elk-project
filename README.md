@@ -25,8 +25,8 @@ Load balancing ensures that the application will be highly available, in additio
 -What aspect of security do load balancers protect? The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks. ----What is the advantage of a jump box? Jump box secure ssh access and manage the Linux servers and cloud containers, it act like a proxy server.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the applications and system infrastructure.
--_What does Filebeat watch for? Filebeat monitors the log files or locations that I specify.
--What does Metricbeat record? Metricbeat collect metrics from the operating system and from services running on the server.
+-_What does Filebeat watch for?Filebeat monitors the log files or locations that I specify.
+-_What does Metricbeat record?Metricbeat collect metrics from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
