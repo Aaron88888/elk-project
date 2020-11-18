@@ -22,13 +22,16 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
--What aspect of security do load balancers protect? The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks. ----What is the advantage of a jump box? Jump box secure ssh access and manage the Linux servers and cloud containers, it act like a proxy server.
+
+-What aspect of security do load balancers protect? The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks. ---
+
+-What is the advantage of a jump box? Jump box secure ssh access and manage the Linux servers and cloud containers, it act like a proxy server.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the applications and system infrastructure.
 
--What does Filebeat watch for?Filebeat monitors the log files or locations that I specify.
+-What does Filebeat watch for? Filebeat monitors the log files or locations that I specify.
 
--What does Metricbeat record?Metricbeat collect metrics from the operating system and from services running on the server.
+-What does Metricbeat record? Metricbeat collect metrics from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -45,10 +48,13 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Gateway machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+
 -whitelisted IP addresses: 23.101.220.223
 
 Machines within the network can only be accessed by Jump box.
+
 -Which machine did you allow to access your ELK VM? Jump box. 
+
 -What was its IP address? 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
@@ -67,10 +73,15 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
 -Install docker:The Docker engine, used for running containers.
+
 -Install python3-pip: Package used to install Python software.
+
 -Install docker module: Python client for Docker. Required by Ansbile to control the state of Docker containers.
+
 -Download and launch docker elk container: Downloads the Docker container called sebp/elk:761 . sebp is the organization that made the container. elk is the container and 761 is  the version.
+
 -Configures the container to start with the following port mappings: 5601:5601, 9200:9200.5044:5044.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
