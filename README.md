@@ -51,11 +51,12 @@ Machines within the network can only be accessed by Jump box.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name      | Publicly Accessible | Allowed IP Addresses |
-|-----------|---------------------|----------------------|
-| Jump Box  | Yes                 | 23.101.220.223       |
-| ELK       | Yes                 | 121.200.6.47         |
-|Web-1(DVWA)| Yes                 | 13.72.253.38         |
+| Name      | Publicly Accessible | Allowed IP Addresses    |
+|-----------|---------------------|-------------------------|
+| Jump Box  | Yes                 | 121.200.6.47            |
+| ELK       | Yes & No            | 121.200.6.47 & 10.0.0.4 |
+|Web-1(DVWA)| Yes & No            | 121.200.6.47 & 10.0.0.4 |
+|  Web-2    | No                  | 10.0.0.4                |
 
 ### Elk Configuration
 
