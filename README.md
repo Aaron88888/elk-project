@@ -93,17 +93,22 @@ This ELK server is configured to monitor the following machines:
 -List the IP addresses of the machines you are monitoring. 10.0.0.5 and 10.0.0.6.
 
 We have installed the following Beats on these machines:
+
 -Metricbeat 
 
 These Beats allow us to collect the following information from each machine:
+
 -Metricbeat collect metrics from the operating system and from services running on the server.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
+
 - Copy the filebeat-install.yml file to /etc/ansible/roles.
+
 - Update the filebeat-config.yml file to include the host detail like IP address.
+
 - Run the playbook, and navigate to http://104.215.190.136:5601/ to check that the installation worked as expected.
 
 
